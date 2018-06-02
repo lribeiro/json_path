@@ -1,5 +1,5 @@
 require "spec_helper"
-require_relative "../src/json_path"
+require "json_path"
 require "json"
 
 def prepare
@@ -332,13 +332,5 @@ RSpec.describe JsonPath do
       ]
       JsonPath.new(path).on(prepare).should eq(output)
     end
-  end
-end
-
-
-
-RSpec.describe JsonPath do
-  it "has a version number" do
-    expect(JsonPath::VERSION).not_to be nil
   end
 end

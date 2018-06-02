@@ -1,3 +1,5 @@
+require "json_path/version"
+
 class String
   @@is_int_regex = /\A[-+]?\d+\z/
   def is_i?
@@ -9,7 +11,7 @@ class String
   end
 end
 
-class JSONPath
+class JsonPath
   attr_accessor :resultType
   attr_accessor :result
   attr_accessor :expression
